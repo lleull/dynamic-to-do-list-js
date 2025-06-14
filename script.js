@@ -105,4 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tasks = Array.from(taskList.children).map((li) => li.querySelector("span").textContent);
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }
+
+  // Invoke addTask on page load
+  addTask();
 });
